@@ -12,3 +12,4 @@ This project is used as an example of a project using different tools used in a 
 - [Github Actions](https://github.com/features/actions)
 - [Split.io](https://split.io/)
 - [Newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
+- [Hashicorp Vault](https://www.hashicorp.com/products/vault)
