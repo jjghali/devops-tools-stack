@@ -1,6 +1,7 @@
-var express = require('express');
-var router = express.Router();
-
+const express = require('express');
+const router = express.Router();
+const Calculator = require('../model/calculator')
+const calculator = new Calculator();
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.send("this is a basic REST API calculator.")
@@ -9,8 +10,9 @@ router.get('/', function (req, res, next) {
 router.post('/sum', function (req, res, next) {
   let firstNumber = req.body.firstNumber;
   let secondNumber = req.body.secondNumber;
-  if (firstNumber && secondNumber) {
-    let result = firstNumber + secondNumber;
+  let result = calculator.sum(firstNumber, secondNumber)
+
+  if (result) {
     res.status(200).send({
       result
     })
@@ -24,8 +26,8 @@ router.post('/sum', function (req, res, next) {
 router.post('/diff', function (req, res, next) {
   let firstNumber = req.body.firstNumber;
   let secondNumber = req.body.secondNumber;
-  if (firstNumber && secondNumber) {
-    let result = firstNumber - secondNumber;
+  let result = calculator.diff(firstNumber, secondNumber)
+  if (result) {
     res.status(200).send({
       result
     })
