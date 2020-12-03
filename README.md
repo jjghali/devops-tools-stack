@@ -10,4 +10,5 @@ This project is used as an example of a project using different tools used in a 
 - [Snyk](https://snyk.io/)
 - [Docker](https://www.docker.com/)
 - [Github Actions](https://github.com/features/actions)
+- [Split.io](https://split.io/)
 - [Newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
