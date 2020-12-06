@@ -14,3 +14,4 @@ This project is used as an example of a project using different tools used in a 
 - [Codacy](https://www.codacy.com/)
 - [Scrutinizer](https://scrutinizer-ci.com/)
 - [Snyk](https://snyk.io/)
+- [Coveralls](https://coveralls.io/)
