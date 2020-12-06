@@ -6,8 +6,8 @@
     "start": "node ./src/bin/www",
     "watch": "nodemon ./src/bin/www",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch --coverage"
+    "test:coverage": "jest --coverage --coverageDirectory='coverage'",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
