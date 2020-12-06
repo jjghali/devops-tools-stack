@@ -1,9 +1,12 @@
-name: Pull-requests validation
+name: Tests validation and code coverage
 
 on:
   pull_request:
     types: [opened, synchronize, ready_for_review]
-
+  push:
+    branches:
+      - main
+      - master
 jobs:
   run-unit-tests:
     name: Run unit tests
