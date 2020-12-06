@@ -8,16 +8,11 @@ This project is used as an example of a project using different tools used in a 
 
 
 ## Tools and technologies used
-### Testing
-- [Newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
-### CI/CD
-- [Github Actions](https://github.com/features/actions)
-- [Split.io](https://split.io/)
-- [Hashicorp Vault](https://www.hashicorp.com/products/vault)
-### Code Quality and security
-- [Codacy](https://www.codacy.com/)
-- [Snyk](https://snyk.io/)
-- [Coveralls](https://coveralls.io/)
 
-### PaaS Cloud hosting
-- [AWS Lambda](https://aws.amazon.com/lambda/?did=ft_card&trk=ft_card)
+|CI/CD|Code Quality and security|Infrastructure monitoring and APM|PaaS Cloud hosting|
+|-----|-------------------------|---------------------------------|------------------|
+|[Github Actions](https://github.com/features/actions)|[Newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)|[DataDog](https://www.datadoghq.com/)|[AWS Lambda](https://aws.amazon.com/lambda/?did=ft_card&trk=ft_card)|
+|[Hashicorp Vault](https://www.hashicorp.com/products/vault)|[Split.io](https://split.io/)|[xMatters](https://www.xmatters.com/)|[DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/)|
+||[Codacy](https://www.codacy.com/)|||
+||[Snyk](https://snyk.io/)|||
+||[Coveralls](https://coveralls.io/)|||
