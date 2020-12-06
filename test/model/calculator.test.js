@@ -11,7 +11,7 @@ describe("Calculator", () => {
         test("the sum of two numbers is 6", () => {
             const firstNumber = 3;
             const secondNumber = 3;
-            const expected = 6;
+            const expected = 4;
             const result = calculator.sum(firstNumber, secondNumber)
             expect(result).toEqual(expected)
         })
