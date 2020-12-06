@@ -8,10 +8,10 @@ This project is used as an example of a project using different tools used in a 
 
 ## Tools and technologies used
 
-|CI/CD|Code Quality and security|Infrastructure monitoring and APM|PaaS Cloud hosting|Infrastructure as Code|Secrets management|
-|-----|-------------------------|---------------------------------|------------------|----------------------|------------------|
-|[Github Actions](https://github.com/features/actions)|[Newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)|[DataDog](https://www.datadoghq.com/)|[AWS Lambda](https://aws.amazon.com/lambda/?did=ft_card&trk=ft_card)|[Terraform](https://www.terraform.io/)|[Hashicorp Vault](https://www.hashicorp.com/products/vault)|
-||[Split.io](https://split.io/)|[xMatters](https://www.xmatters.com/)|[DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/)|||
-||[Codacy](https://www.codacy.com/)|||||
-||[Snyk](https://snyk.io/)|||||
-||[Coveralls](https://coveralls.io/)|||||
+|CI/CD|Code Quality and security|Infrastructure monitoring and APM|PaaS Cloud hosting|Infrastructure as Code|Secrets management|Package manager|
+|-----|-------------------------|---------------------------------|------------------|----------------------|------------------|---------------|
+|[Github Actions](https://github.com/features/actions)|[Newman](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)|[DataDog](https://www.datadoghq.com/)|[AWS Lambda](https://aws.amazon.com/lambda/?did=ft_card&trk=ft_card)|[Terraform](https://www.terraform.io/)|[Hashicorp Vault](https://www.hashicorp.com/products/vault)|[GitHub Packages](https://github.com/features/packages)|
+||[Split.io](https://split.io/)|[xMatters](https://www.xmatters.com/)|[DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/)||||
+||[Codacy](https://www.codacy.com/)||||||
+||[Snyk](https://snyk.io/)||||||
+||[Coveralls](https://coveralls.io/)||||||
