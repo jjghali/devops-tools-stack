@@ -4,7 +4,7 @@ class Calculator {
     }
 
     sum(firstNumber, secondNumber) {
-        if (firstNumber && secondNumber) {
+        if (firstNumber != null && secondNumber != null) {
             return firstNumber + secondNumber;
         }
         return null;

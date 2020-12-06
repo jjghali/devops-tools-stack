@@ -15,6 +15,15 @@ describe("Calculator", () => {
             const result = calculator.sum(firstNumber, secondNumber)
             expect(result).toEqual(expected)
         })
+
+        test("the sum of two numbers is 0", () => {
+            const firstNumber = 0;
+            const secondNumber = 0;
+            const expected = 0;
+            const result = calculator.sum(firstNumber, secondNumber)
+            expect(result).toEqual(expected)
+        })
+
         test("the result is invalid because of missing firstNumber", () => {
             const firstNumber = null;
             const secondNumber = 3;
@@ -28,6 +37,14 @@ describe("Calculator", () => {
             const firstNumber = 6;
             const secondNumber = 4;
             const expected = 2;
+            const result = calculator.diff(firstNumber, secondNumber)
+            expect(result).toEqual(expected)
+        })
+
+        test("the diff of two numbers is 0", () => {
+            const firstNumber = 4;
+            const secondNumber = 4;
+            const expected = 0;
             const result = calculator.diff(firstNumber, secondNumber)
             expect(result).toEqual(expected)
         })

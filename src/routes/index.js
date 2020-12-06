@@ -12,7 +12,7 @@ router.post('/sum', function (req, res, next) {
   let secondNumber = req.body.secondNumber;
   let result = calculator.sum(firstNumber, secondNumber)
 
-  if (result) {
+  if (result != null) {
     res.status(200).send({
       result
     })
@@ -27,7 +27,7 @@ router.post('/diff', function (req, res, next) {
   let firstNumber = req.body.firstNumber;
   let secondNumber = req.body.secondNumber;
   let result = calculator.diff(firstNumber, secondNumber)
-  if (result) {
+  if (result != null) {
     res.status(200).send({
       result
     })
