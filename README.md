@@ -1,4 +1,5 @@
 # DevOps tools stack
+[![Coverage Status](https://coveralls.io/repos/github/jjghali/devops-tools-stack/badge.svg?branch=master)](https://coveralls.io/github/jjghali/devops-tools-stack?branch=master)
 
 This project is used as an example of a project using different tools used in a typical CI/CD pipeline
 
