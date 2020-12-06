@@ -1,0 +1,117 @@
+{
+    "info": {
+        "_postman_id": "b70dd849-82d9-4509-8a1b-c1c54ed44903",
+        "name": "Devops tool stack",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Sum",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "id": "bcfd0b9f-0c14-4a9f-848a-437af7f617bd",
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {\r",
+                            "    pm.response.to.have.status(200);\r",
+                            "});\r",
+                            "pm.test(\"Result is correct\", function () {\r",
+                            "    var result = pm.response.json().result;\r",
+                            "    var expected = 4\r",
+                            "    pm.expect(result).to.eql(expected);\r",
+                            "});\r",
+                            ""
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"firstNumber\":2,\r\n    \"secondNumber\":2\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:3000/sum",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "sum"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Diff",
+            "event": [
+                {
+                    "listen": "test",
+                    "script": {
+                        "id": "7120666b-c4bd-4aa3-b621-9e976702c80e",
+                        "exec": [
+                            "pm.test(\"Status code is 200\", function () {\r",
+                            "    pm.response.to.have.status(200);\r",
+                            "});\r",
+                            "pm.test(\"Result is correct\", function () {\r",
+                            "    var result = pm.response.json().result;\r",
+                            "    var expected = 0\r",
+                            "    pm.expect(result).to.eql(expected);\r",
+                            "});\r",
+                            ""
+                        ],
+                        "type": "text/javascript"
+                    }
+                }
+            ],
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"firstNumber\":2,\r\n    \"secondNumber\":2\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:3000/diff",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "diff"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Root query",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": ""
+                }
+            },
+            "response": []
+        }
+    ],
+    "protocolProfileBehavior": {}
+}
