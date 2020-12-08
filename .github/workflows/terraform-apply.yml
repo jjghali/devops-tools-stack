@@ -6,13 +6,15 @@ jobs:
   apply-terraform:
     defaults:
       run:
-        working-directory: "tf/"
+        working-directory: "./tf"
     env:
       DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
     name: Apply plan
     runs-on: ubuntu-latest
     steps:
       - uses: hashicorp/setup-terraform@v1
+        with:
+          tf_actions_working_dir: "tf"
       - name: Terraform init
         id: init
         run: terraform init
