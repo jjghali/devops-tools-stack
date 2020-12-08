@@ -4,8 +4,10 @@ on: workflow_dispatch
 
 jobs:
   apply-terraform:
+    defaults:
+      run:
+        working-directory: ${{ env.tf_actions_working_dir }}
     env:
-      working-directory: ./tf
       DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
     name: Apply plan
     runs-on: ubuntu-latest

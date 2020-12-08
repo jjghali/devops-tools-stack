@@ -4,8 +4,10 @@ on: workflow_dispatch
 
 jobs:
   apply-terraform:
+    defaults:
+      run:
+        working-directory: ./tf
     env:
-      working-directory: ./tf
       DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
     name: Destroy plan
     runs-on: ubuntu-latest
