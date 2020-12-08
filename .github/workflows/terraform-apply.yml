@@ -4,6 +4,8 @@ on: repository_dispatch
 
 jobs:
   apply-terraform:
+    env:
+      working-directory: ./tf
     name: Apply plan
     runs-on: ubuntu-latest
     steps:
