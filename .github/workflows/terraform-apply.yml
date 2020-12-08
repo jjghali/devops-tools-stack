@@ -1,6 +1,6 @@
 name: DigitalOcean - Apply Terraform plan
 
-on: repository_dispatch
+on: workflow_dispatch
 
 jobs:
   apply-terraform:
