@@ -1,11 +1,12 @@
 name: DigitalOcean - Destroy Terraform plan
 
-on: repository_dispatch
+on: workflow_dispatch
 
 jobs:
   apply-terraform:
     env:
       working-directory: ./tf
+      DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
     name: Destroy plan
     runs-on: ubuntu-latest
     steps:
