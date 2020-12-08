@@ -6,7 +6,7 @@ jobs:
   apply-terraform:
     defaults:
       run:
-        working-directory: "tf/"
+        working-directory: "./tf"
     env:
       DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
     name: Destroy plan
