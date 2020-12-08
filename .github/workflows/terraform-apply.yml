@@ -6,7 +6,7 @@ jobs:
   apply-terraform:
     defaults:
       run:
-        working-directory: ${{ env.tf_actions_working_dir }}
+        working-directory: "tf/"
     env:
       DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
     name: Apply plan
