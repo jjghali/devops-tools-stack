@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "digitalocean" {
-  token = var.do_token
+  # token = var.do_token
 }
 
 resource "digitalocean_app" "do-app" {
@@ -17,8 +17,8 @@ resource "digitalocean_app" "do-app" {
     region = var.do_region
 
     service {
-      name               = var.service_name
-      environment_slug   = "node"
+      name = "${var.app_name}-service"
+
       instance_count     = 1
       instance_size_slug = var.do_instance_size
 

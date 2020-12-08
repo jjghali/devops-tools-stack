@@ -1,6 +1,6 @@
 module "digitalocean" {
-  source   = "./modules/digitalocean"
-  app_name = "devopsApp-Sample"
+  source = "./modules/digitalocean"
+
 }
 
 # module "aws" {
