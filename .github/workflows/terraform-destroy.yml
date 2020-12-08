@@ -12,6 +12,8 @@ jobs:
     name: Destroy plan
     runs-on: ubuntu-latest
     steps:
+      - run: pwd
+      - run: ls -al
       - uses: hashicorp/setup-terraform@v1
       - name: Terraform init
         id: init
