@@ -6,6 +6,7 @@ jobs:
   apply-terraform:
     env:
       working-directory: ./tf
+      DIGITALOCEAN_TOKEN: ${{ secrets.DIGITALOCEAN_TOKEN }}
     name: Apply plan
     runs-on: ubuntu-latest
     steps:
